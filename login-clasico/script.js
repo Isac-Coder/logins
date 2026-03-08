@@ -107,3 +107,13 @@ passwordInput.addEventListener('input', () => {
         clearError(passwordInput, passwordError);
     }
 });
+
+// Fondo interactivo
+document.addEventListener('mousemove', (e) => {
+    const body = document.body;
+    const x = (e.clientX / window.innerWidth) * 100;
+    const y = (e.clientY / window.innerHeight) * 100;
+    
+    body.style.setProperty('--mouse-x', x + '%');
+    body.style.setProperty('--mouse-y', y + '%');
+});

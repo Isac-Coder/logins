@@ -129,6 +129,52 @@ form.addEventListener('submit', (e) => {
     }
 });
 
+// Fondo interactivo
+document.addEventListener('mousemove', (e) => {
+    const body = document.body;
+    const x = (e.clientX / window.innerWidth) * 100;
+    const y = (e.clientY / window.innerHeight) * 100;
+    
+    const beforePseudo = window.getComputedStyle(body, '::before');
+    body.style.setProperty('--mouse-x', x + '%');
+    body.style.setProperty('--mouse-y', y + '%');
+});
+
+// Efecto de click en el fondo
+document.addEventListener('click', (e) => {
+    const ripple = document.createElement('div');
+    ripple.style.position = 'fixed';
+    ripple.style.left = e.clientX + 'px';
+    ripple.style.top = e.clientY + 'px';
+    ripple.style.width = '1px';
+    ripple.style.height = '1px';
+    ripple.style.background = 'rgba(0, 137, 123, 0.5)';
+    ripple.style.borderRadius = '50%';
+    ripple.style.pointerEvents = 'none';
+    ripple.style.animation = 'expandRipple 1s ease-out forwards';
+    ripple.style.zIndex = '1';
+    
+    document.body.appendChild(ripple);
+    setTimeout(() => ripple.remove(), 1000);
+});
+
+// Agregar estilos para la animación
+const style = document.createElement('style');
+style.textContent = `
+    @keyframes expandRipple {
+        from {
+            width: 1px;
+            height: 1px;
+            opacity: 1;
+        }
+        to {
+            width: 300px;
+            height: 300px;
+            opacity: 0;
+        }
+    }
+`;
+
 // Efectos de rizado en los botones sociales
 document.querySelectorAll('.social-btn').forEach(btn => {
     btn.addEventListener('click', (e) => {

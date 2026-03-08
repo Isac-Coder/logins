@@ -11,7 +11,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 20px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #ff6f00 0%, #ff5722 100%);
     overflow: hidden;
 }
 
@@ -22,7 +22,7 @@ body {
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #ff6f00 0%, #ff5722 100%);
 }
 
 .blob {
@@ -35,7 +35,7 @@ body {
 .blob-1 {
     width: 300px;
     height: 300px;
-    background: #667eea;
+    background: #ff6f00;
     border-radius: 50%;
     top: -100px;
     left: -100px;
@@ -45,7 +45,7 @@ body {
 .blob-2 {
     width: 250px;
     height: 250px;
-    background: #764ba2;
+    background: #ff5722;
     border-radius: 50%;
     bottom: -50px;
     right: -50px;
