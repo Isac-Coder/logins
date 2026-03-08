@@ -283,11 +283,182 @@ body {
 }
 
 @media (max-width: 480px) {
+    body {
+        padding: 60px 10px 10px 10px;
+    }
+    
+    .back-button {
+        top: 10px;
+        left: 10px;
+    }
+    
+    .back-button a {
+        font-size: 0.9rem;
+    }
+    
+    .container {
+        max-width: 100%;
+    }
+    
     .login-box {
-        padding: 30px 20px;
+        padding: 20px 15px;
+        border-radius: 8px;
     }
 
     .login-box h1 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+    }
+    
+    .form-group {
+        margin-bottom: 15px;
+    }
+    
+    .form-group label {
+        font-size: 0.85rem;
+        margin-bottom: 5px;
+    }
+    
+    .form-group input {
+        padding: 10px 12px;
+        font-size: 0.95rem;
+    }
+    
+    .btn-login {
+        padding: 10px;
+        font-size: 0.95rem;
+    }
+    
+    .gradient-1 {
+        width: 300px;
+        height: 300px;
+        top: -150px;
+        right: -150px;
+    }
+    
+    .gradient-2 {
+        width: 250px;
+        height: 250px;
+        bottom: -125px;
+        left: -125px;
+    }
+    
+    .gradient-3 {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+/* Tablet Portrait (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    body {
+        padding: 70px 15px 15px 15px;
+    }
+    
+    .container {
+        max-width: 350px;
+    }
+    
+    .login-box {
+        padding: 30px 25px;
+    }
+    
+    .login-box h1 {
+        font-size: 1.6rem;
+    }
+    
+    .form-group input {
+        padding: 11px 14px;
+        font-size: 0.97rem;
+    }
+    
+    .gradient-1 {
+        width: 400px;
+        height: 400px;
+        top: -200px;
+        right: -200px;
+    }
+    
+    .gradient-2 {
+        width: 350px;
+        height: 350px;
+        bottom: -175px;
+        left: -175px;
+    }
+    
+    .gradient-3 {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+/* Tablet Landscape / Small Desktop (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    body {
+        padding: 70px 20px 20px 20px;
+    }
+    
+    .container {
+        max-width: 420px;
+    }
+}
+
+/* Large Screens / TV (1920px+) */
+@media (min-width: 1920px) {
+    body {
+        padding: 100px 40px 40px 40px;
+    }
+    
+    .container {
+        max-width: 500px;
+    }
+    
+    .login-box {
+        padding: 50px;
+        border-radius: 15px;
+    }
+    
+    .login-box h1 {
+        font-size: 2.2rem;
+        margin-bottom: 40px;
+    }
+    
+    .form-group {
+        margin-bottom: 25px;
+    }
+    
+    .form-group label {
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+    }
+    
+    .form-group input {
+        padding: 15px 18px;
+        font-size: 1.1rem;
+        border-radius: 8px;
+    }
+    
+    .btn-login {
+        padding: 15px;
+        font-size: 1.1rem;
+    }
+    
+    .gradient-1 {
+        width: 800px;
+        height: 800px;
+        top: -400px;
+        right: -400px;
+    }
+    
+    .gradient-2 {
+        width: 700px;
+        height: 700px;
+        bottom: -350px;
+        left: -350px;
+    }
+    
+    .gradient-3 {
+        width: 600px;
+        height: 600px;
     }
 }

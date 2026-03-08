@@ -241,7 +241,29 @@ Si quieres mejorar estos logins:
 - **Alineación de iconos**: En `login-glassmorphism`, los iconos de email y candado están ahora alineados con el texto del input.
 - **Estilo glass en login-signup**: La sección derecha del `login-signup` ahora usa efecto glassmorphism, creando una casilla unida al formulario izquierdo.
 
-Estos cambios mejoran la consistencia visual y la experiencia de usuario en toda la colección.
+### Actualización de Diseño Responsivo (Marzo 2026)
+- **Media queries mejoradas**: Agregadas media queries completas y robustas para todos los tamaños de pantalla.
+  - **Móviles** (hasta 480px): Interfaz compacta, padding reducido, gradientes flotantes pequeños (250-300px)
+  - **Tablet Portrait** (481px - 768px): Diseño intermedio optimizado, containers hasta 380px
+  - **Tablet Landscape / Desktop Pequeño** (769px - 1024px): Layout mejorado, máximo ancho 450px
+  - **Desktops grandes** (1025px - 1919px): Diseño completo sin cambios mayores
+  - **Pantallas grandes / Televisores** (1920px+): Interfaz maximizada con espaciado generoso, padding 40-100px, fuentes grandes (1.1-2.2rem), gradientes espectaculares (600-800px)
+- **Escalado adaptativo**: Todos los elementos se escalan automáticamente: gradientes flotantes, fuentes, padding, botones, iconos
+- **Optimización para TV**: Especial consideración para televisores con gradientes más visibles desde lejos
+
+### Logo de GitHub (Marzo 2026)
+- **Logo agregado**: Icono de GitHub en la esquina inferior derecha (fixed)
+  - Botón circular blanco con sombra elegante
+  - Enlace directo a https://github.com/Isac-Coder
+  - Se abre en nueva pestaña
+- **Interacciones**: Efecto hover con zoom y elevación, animación suave de 0.3s
+- **Responsividad**:
+  - Desktop: 35px x 35px
+  - Móvil: 30px x 30px
+  - TV: 50px x 50px
+- **Integración**: Font Awesome 6.0.0 para el icono del logotipo
+
+Estos cambios potencian la experiencia de usuario en todos los dispositivos, desde móviles hasta televisores.
 
 ## �📄 Licencia
 

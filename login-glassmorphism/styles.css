@@ -333,30 +333,175 @@ body {
 }
 
 @media (max-width: 480px) {
+    body {
+        padding: 60px 10px 10px 10px;
+    }
+    
     .back-button {
         top: 10px;
         left: 10px;
     }
+    
+    .back-button a {
+        font-size: 0.9rem;
+    }
+    
+    .container {
+        max-width: 100%;
+    }
 
     .glass-card {
-        padding: 35px 25px;
+        padding: 25px 18px;
+        border-radius: 20px;
+    }
+    
+    .card-header {
+        margin-bottom: 20px;
     }
 
     .card-header h1 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+        margin-bottom: 5px;
+    }
+    
+    .card-header p {
+        font-size: 0.85rem;
     }
 
     .blob {
-        filter: blur(40px);
+        filter: blur(35px);
     }
 
     .blob-1 {
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
+        top: -75px;
+        right: -75px;
     }
 
     .blob-2 {
-        width: 150px;
-        height: 150px;
+        width: 100px;
+        height: 100px;
+        bottom: -50px;
+        left: -50px;
+    }
+    
+    .form-group input {
+        padding: 9px 12px;
+        font-size: 0.95rem;
+    }
+    
+    .btn-login {
+        padding: 10px;
+        font-size: 0.95rem;
+    }
+}
+
+/* Tablet Portrait (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    body {
+        padding: 70px 15px 15px 15px;
+    }
+    
+    .container {
+        max-width: 350px;
+    }
+    
+    .glass-card {
+        padding: 30px 22px;
+        border-radius: 22px;
+    }
+    
+    .card-header h1 {
+        font-size: 1.6rem;
+    }
+    
+    .blob-1 {
+        width: 250px;
+        height: 250px;
+    }
+
+    .blob-2 {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .form-group input {
+        padding: 10px 13px;
+        font-size: 0.97rem;
+    }
+}
+
+/* Tablet Landscape / Small Desktop (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    body {
+        padding: 70px 20px 20px 20px;
+    }
+    
+    .container {
+        max-width: 420px;
+    }
+}
+
+/* Large Screens / TV (1920px+) */
+@media (min-width: 1920px) {
+    body {
+        padding: 100px 40px 40px 40px;
+    }
+    
+    .container {
+        max-width: 500px;
+    }
+    
+    .glass-card {
+        padding: 45px 35px;
+        border-radius: 30px;
+        backdrop-filter: blur(12px);
+    }
+    
+    .card-header {
+        margin-bottom: 35px;
+    }
+    
+    .card-header h1 {
+        font-size: 2.2rem;
+        margin-bottom: 10px;
+    }
+    
+    .card-header p {
+        font-size: 1.1rem;
+    }
+
+    .blob {
+        filter: blur(50px);
+    }
+
+    .blob-1 {
+        width: 500px;
+        height: 500px;
+        top: -250px;
+        right: -250px;
+    }
+
+    .blob-2 {
+        width: 400px;
+        height: 400px;
+        bottom: -200px;
+        left: -200px;
+    }
+    
+    .form-group {
+        margin-bottom: 25px;
+    }
+    
+    .form-group input {
+        padding: 14px 16px;
+        font-size: 1.1rem;
+        border-radius: 8px;
+    }
+    
+    .btn-login {
+        padding: 14px;
+        font-size: 1.1rem;
     }
 }

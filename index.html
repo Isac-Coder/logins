@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tipos de Logins</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         * {
             margin: 0;
@@ -122,13 +123,155 @@
             opacity: 0.8;
         }
 
-        @media (max-width: 768px) {
+        /* Mobile - Pantallas pequeñas (hasta 480px) */
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+            
+            .header h1 {
+                font-size: 1.5rem;
+            }
+            
+            .header p {
+                font-size: 0.9rem;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+                padding: 10px;
+            }
+            
+            .card {
+                padding: 15px;
+            }
+            
+            .card h2 {
+                font-size: 1.2rem;
+            }
+            
+            .card p {
+                font-size: 0.85rem;
+            }
+        }
+        
+        /* Tablet Portrait (481px - 768px) */
+        @media (min-width: 481px) and (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            
             .header h1 {
                 font-size: 1.8rem;
             }
-
+            
             .cards-grid {
-                grid-template-columns: 1fr;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+                padding: 15px;
+            }
+            
+            .card {
+                padding: 20px;
+            }
+        }
+        
+        /* Tablet Landscape / Small Desktop (769px - 1024px) */
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .cards-grid {
+                grid-template-columns: repeat(2, 1fr);
+                max-width: 1000px;
+            }
+        }
+        
+        /* Large Screens / TV (1920px+) */
+        @media (min-width: 1920px) {
+            body {
+                padding: 40px;
+            }
+            
+            .container {
+                max-width: 1400px;
+            }
+            
+            .header h1 {
+                font-size: 3rem;
+            }
+            
+            .header p {
+                font-size: 1.3rem;
+            }
+            
+            .card {
+                padding: 35px;
+            }
+            
+            .card h2 {
+                font-size: 1.8rem;
+            }
+            
+            .card p {
+                font-size: 1.1rem;
+            }
+        }
+
+        /* GitHub Logo */
+        .github-logo {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 50;
+        }
+
+        .github-logo a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 35px;
+            height: 35px;
+            background: white;
+            color: #333;
+            border-radius: 50%;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+            text-decoration: none;
+        }
+
+        .github-logo a:hover {
+            transform: scale(1.15) translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+            background: #f0f0f0;
+        }
+
+        .github-logo a:active {
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 480px) {
+            .github-logo {
+                bottom: 15px;
+                right: 15px;
+            }
+
+            .github-logo a {
+                width: 30px;
+                height: 30px;
+                font-size: 0.8rem;
+            }
+        }
+
+        @media (min-width: 1920px) {
+            .github-logo {
+                bottom: 40px;
+                right: 40px;
+            }
+
+            .github-logo a {
+                width: 50px;
+                height: 50px;
+                font-size: 1.5rem;
             }
         }
     </style>
@@ -184,6 +327,13 @@
         <div class="footer">
             <p>💡 Haz clic en cualquier tarjeta para ver la demostración interactiva</p>
         </div>
+    </div>
+
+    <!-- GitHub Logo -->
+    <div class="github-logo">
+        <a href="https://github.com/Isac-Coder" target="_blank" title="Visitar GitHub">
+            <i class="fab fa-github"></i>
+        </a>
     </div>
 </body>
 </html>
