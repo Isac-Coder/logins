@@ -6,52 +6,111 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #1a472a 0%, #2d5a3d 50%, #1a472a 100%);
+    background: #000;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
-    position: relative;
     overflow: hidden;
 }
 
-body::before {
-    content: '';
+.animated-bg {
     position: fixed;
-    width: 500px;
-    height: 500px;
-    background: radial-gradient(circle, rgba(76, 175, 80, 0.15) 0%, transparent 70%);
-    border-radius: 50%;
-    top: -200px;
-    right: -200px;
-    z-index: -1;
-    pointer-events: none;
-    transition: all 0.3s ease;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease infinite;
 }
 
-body::after {
-    content: '';
-    position: fixed;
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.gradient-1 {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(238, 119, 82, 0.3), transparent);
+    border-radius: 50%;
+    top: -300px;
+    right: -300px;
+    animation: float1 20s ease-in-out infinite;
+}
+
+.gradient-2 {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(35, 166, 213, 0.3), transparent);
+    border-radius: 50%;
+    bottom: -250px;
+    left: -250px;
+    animation: float2 25s ease-in-out infinite;
+}
+
+.gradient-3 {
+    position: absolute;
     width: 400px;
     height: 400px;
-    background: radial-gradient(circle, rgba(56, 142, 60, 0.1) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(35, 213, 171, 0.2), transparent);
     border-radius: 50%;
-    bottom: -150px;
-    left: -150px;
-    z-index: -1;
-    pointer-events: none;
-    transition: all 0.3s ease;
+    top: 50%;
+    left: 10%;
+    animation: float3 30s ease-in-out infinite;
+}
+
+@keyframes float1 {
+    0%, 100% {
+        transform: translate(0, 0) scale(1);
+    }
+    50% {
+        transform: translate(50px, -50px) scale(1.1);
+    }
+}
+
+@keyframes float2 {
+    0%, 100% {
+        transform: translate(0, 0) scale(1);
+    }
+    50% {
+        transform: translate(-50px, 50px) scale(1.1);
+    }
+}
+
+@keyframes float3 {
+    0%, 100% {
+        transform: translate(0, 0) scale(1);
+    }
+    50% {
+        transform: translate(30px, 30px) scale(1.05);
+    }
 }
 
 .container {
     width: 100%;
     max-width: 400px;
     position: relative;
+    z-index: 10;
 }
 
 .back-button {
-    margin-bottom: 30px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 100;
 }
 
 .back-button a {
@@ -59,7 +118,10 @@ body::after {
     text-decoration: none;
     font-size: 1rem;
     transition: all 0.3s ease;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .back-button a:hover {
