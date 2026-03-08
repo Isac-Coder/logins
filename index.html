@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Logins</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 50px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        .card h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+        .card p {
+            color: #666;
+            margin-bottom: 25px;
+            font-size: 0.95rem;
+        }
+
+        .card a {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+
+        .card a:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        .footer {
+            text-align: center;
+            color: white;
+            margin-top: 50px;
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8rem;
+            }
+
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔐 Tipos de Logins</h1>
+            <p>Colección de formularios de inicio de sesión con diferentes estilos</p>
+        </div>
+
+        <div class="cards-grid">
+            <div class="card">
+                <h2>Login Clásico</h2>
+                <p>Un formulario de login simple y tradicional con validación básica.</p>
+                <a href="login-clasico/index.html">Ver Demo →</a>
+            </div>
+
+            <div class="card">
+                <h2>Login Moderno</h2>
+                <p>Diseño contemporáneo con animaciones suaves y efectos visuales.</p>
+                <a href="login-moderno/index.html">Ver Demo →</a>
+            </div>
+
+            <div class="card">
+                <h2>Login Glassmorphism</h2>
+                <p>Efecto de cristal translúcido con fondo desenfocado estilo iOS.</p>
+                <a href="login-glassmorphism/index.html">Ver Demo →</a>
+            </div>
+
+            <div class="card">
+                <h2>Login Oscuro</h2>
+                <p>Tema oscuro moderno con interfaz elegante y minimalista.</p>
+                <a href="login-oscuro/index.html">Ver Demo →</a>
+            </div>
+
+            <div class="card">
+                <h2>Login con Signup</h2>
+                <p>Toggle entre formulario de login y registro con transiciones suaves.</p>
+                <a href="login-signup/index.html">Ver Demo →</a>
+            </div>
+
+            <div class="card">
+                <h2>Login Gradiente</h2>
+                <p>Diseño colorido con degradados animados y efectos dinámicos.</p>
+                <a href="login-gradiente/index.html">Ver Demo →</a>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>💡 Haz clic en cualquier tarjeta para ver la demostración interactiva</p>
+        </div>
+    </div>
+</body>
+</html>
