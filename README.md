@@ -272,3 +272,5 @@ Estos logins son **gratuitos para usar** en tus proyectos personales y comercial
 ---
 
 **Hecho con ❤️ | Disfruta creando interfaces hermosas** 🎨
+
+###### Futuramente se agregaran almenos 6 tipos de estilos para la opcion de registrarse
