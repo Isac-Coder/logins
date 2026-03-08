@@ -16,7 +16,6 @@ Una colección completa de **6 formularios de login** con diferentes estilos, ef
 - Diseño contemporáneo con iconos
 - Animaciones suaves y fluidas
 - Botones sociales (Google, GitHub, Twitter)
-- Toggle de visibilidad de contraseña
 - Efectos hover mejorados
 
 ### 3. **Login Glassmorphism** 🟠
@@ -58,7 +57,6 @@ Una colección completa de **6 formularios de login** con diferentes estilos, ef
 - Mensajes de error claros
 
 ✅ **Interactividad**
-- Mostrar/Ocultar contraseña
 - Efectos hover dinámicos
 - Animaciones suaves
 - Feedback visual
@@ -112,6 +110,42 @@ logins/
     ├── styles.css
     └── script.js
 ```
+
+## 📄 Documentación de Archivos
+
+### Archivos Comunes
+- **`index.html`** (raíz): Página principal con tarjetas que enlazan a cada demo de login.
+- **`interactive-bg.js`**: Script compartido para efectos de fondo interactivo (seguimiento del mouse, ondulaciones).
+
+### Login Clásico
+- **`index.html`**: Formulario simple con campos de email y contraseña, botón de login y enlace de registro.
+- **`styles.css`**: Estilos básicos con gradiente verde, sombras y animaciones hover.
+- **`script.js`**: Validación de email y contraseña, mensajes de error y envío del formulario.
+
+### Login Moderno
+- **`index.html`**: Formulario con iconos, inputs con placeholders, botones sociales y toggle de recordar.
+- **`styles.css`**: Diseño moderno con gradiente turquesa, efectos de hover avanzados y responsive.
+- **`script.js`**: Validaciones, efectos de carga en botón y manejo de errores.
+
+### Login Glassmorphism
+- **`index.html`**: Formulario con efecto glass (translúcido), inputs con iconos y botones sociales.
+- **`styles.css`**: Estilos glassmorphism con blur, gradientes naranjas y animaciones de globos.
+- **`script.js`**: Validaciones y efectos de feedback visual.
+
+### Login Oscuro
+- **`index.html`**: Tema oscuro con logo animado, inputs con iconos y botones sociales.
+- **`styles.css`**: Paleta rosa-magenta, efectos de glow y animaciones de degradado.
+- **`script.js`**: Validaciones y animaciones de carga.
+
+### Login con Signup
+- **`index.html`**: Dos formularios (login/signup) con toggle, panel lateral informativo.
+- **`styles.css`**: Layout de grid, gradientes azules y transiciones suaves.
+- **`script.js`**: Toggle entre formularios, validaciones separadas y efectos de slide.
+
+### Login Gradiente
+- **`index.html`**: Formulario con partículas flotantes, logo animado y botones sociales.
+- **`styles.css`**: Gradientes multicolores animados, efectos de flotación y glass.
+- **`script.js`**: Validaciones, animaciones de carga y efectos de partículas.
 
 ## 🎨 Personalización
 
@@ -197,7 +231,19 @@ Si quieres mejorar estos logins:
 3. Prueba en diferentes navegadores
 4. Documenta tus mejoras
 
-## 📄 Licencia
+## � Cambios Recientes
+
+### Actualización General (Marzo 2026)
+- **Fondo animado unificado**: Todas las páginas ahora usan el mismo fondo animado dinámico basado en `login-gradiente`, con gradiente lineal animado y elementos flotantes.
+- **Botón "Atrás" consistente**: El botón de navegación está fijo en la esquina superior izquierda en todas las páginas para una experiencia uniforme.
+- **Eliminación de toggles de contraseña**: Se removieron los botones para mostrar/ocultar contraseña en `login-glassmorphism`, `login-moderno`, `login-oscuro` y `login-gradiente` para simplificar la interfaz.
+- **Ajustes de posicionamiento**: Los formularios se posicionan más arriba en la página para mejor alineación vertical.
+- **Alineación de iconos**: En `login-glassmorphism`, los iconos de email y candado están ahora alineados con el texto del input.
+- **Estilo glass en login-signup**: La sección derecha del `login-signup` ahora usa efecto glassmorphism, creando una casilla unida al formulario izquierdo.
+
+Estos cambios mejoran la consistencia visual y la experiencia de usuario en toda la colección.
+
+## �📄 Licencia
 
 Estos logins son **gratuitos para usar** en tus proyectos personales y comerciales.
 

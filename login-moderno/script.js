@@ -1,7 +1,6 @@
 const form = document.getElementById('loginForm');
 const emailInput = document.getElementById('email');
 const passwordInput = document.getElementById('password');
-const togglePasswordBtn = document.getElementById('togglePassword');
 const messageDiv = document.getElementById('message');
 const emailError = document.getElementById('emailError');
 const passwordError = document.getElementById('passwordError');
@@ -11,17 +10,6 @@ function validateEmail(email) {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return regex.test(email);
 }
-
-// Mostrar/Ocultar contraseña
-togglePasswordBtn.addEventListener('click', (e) => {
-    e.preventDefault();
-    const type = passwordInput.type === 'password' ? 'text' : 'password';
-    passwordInput.type = type;
-    
-    const icon = togglePasswordBtn.querySelector('i');
-    icon.classList.toggle('fa-eye');
-    icon.classList.toggle('fa-eye-slash');
-});
 
 // Mostrar error
 function showError(input, errorElement, message) {
